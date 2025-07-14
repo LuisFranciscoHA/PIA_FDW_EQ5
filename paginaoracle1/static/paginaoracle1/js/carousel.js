@@ -1,21 +1,52 @@
-const carousel = document.getElementById('carousel');
-let currentIndex = 0;
-
-function moverCarousel(direction) {
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.getElementById('carousel');
+  const carouselContainer = document.querySelector('.carousel-container');
+  const dotsContainer = document.getElementById('carousel-dots');
   const items = carousel.querySelectorAll('.carousel-item');
-  const itemWidth = items[0].offsetWidth + 30; // ancho + margen
+  let currentIndex = 0;
+  let autoSlide;
 
-  currentIndex += direction;
+  window.moverCarousel = function (direction) {
+    if (direction !== 0) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = items.length - 1;
+      else if (currentIndex >= items.length) currentIndex = 0;
+    }
+    const itemWidth = items[0].offsetWidth + 30; 
+    carousel.style.transform = `translateX(${-itemWidth * currentIndex}px)`;
+    actualizarDots();
+  };
 
-  // Si pasas del último, vuelve al primero
-  if (currentIndex > items.length - 1) {
-    currentIndex = 0;
+  items.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      moverCarousel(0);
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  function actualizarDots() {
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[currentIndex]) {
+      dots[currentIndex].classList.add('active');
+    }
   }
 
-  // Si pasas antes del primero, vuelve al último
-  if (currentIndex < 0) {
-    currentIndex = items.length - 1;
+  function startAutoSlide() {
+    autoSlide = setInterval(() => {
+      moverCarousel(1);
+    }, 3000);
+  }
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
   }
 
-  carousel.style.transform = `translateX(${-itemWidth * currentIndex}px)`;
-}
+  carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+  carouselContainer.addEventListener('mouseleave', startAutoSlide);
+
+  moverCarousel(0);
+  startAutoSlide();
+});

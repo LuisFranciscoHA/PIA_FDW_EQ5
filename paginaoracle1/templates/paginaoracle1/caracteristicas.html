@@ -2,84 +2,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Características</title>
-    <link rel="stylesheet" href="estilocaracteristica.css">
+    <link rel="stylesheet" href="{% static 'paginaoracle1/css/estilo_caract.css' %}" />
 </head>
 <body>
-
+    <br>
     <nav>
-        <ul>
-            <li><a href="{% url 'inicio' %}">Inicio</a></li>               
-            <li><a href="ventajas.html">Ventajas</a></li>
-            <li><a href="desventajas.html">Desventajas</a></li>     
-            <li><a href="apoyo.html">¿A quién apoya?</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
+        <ul class="nav-links">
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'ventajas' %}">Ventajas</a></li>
+            <li><a href="{% url 'desventajas' %}">Desventajas</a></li>
+            <li><a href="{% url 'apoyo' %}">¿A quién apoya?</a></li>
+            <li><a href="{% url 'contacto' %}">Contáctanos</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Características</h1>
-        <p>En esta sección conocerás las principales características de Oracle NoSQL Database Cloud Service y cómo sus funciones ayudan a los desarrolladores a trabajar de manera más eficiente y segura.</p>
-    </header>
+<header>
+    <h1>Características</h1>
+    <p>En esta sección conocerás las principales características de Oracle NoSQL Database Cloud Service y 
+        cómo sus funciones ayudan a los desarrolladores a trabajar de manera más eficiente y segura.
+    </p>
+</header>
+<br><br>
 
-    <section>
-        <h2>Características principales</h2>
-        <ol>
-            <li>Totalmente gestionado con administración cero</li>
-            <li>Ciclo de vida de desarrollo más rápido</li>
-            <li>Alto rendimiento y predecibilidad</li>
-            <li>Modelado de datos flexible</li>
-            <li>Seguridad y redundancia</li>
-            <li>Compatibilidad con datos JSON</li>
-            <li>Tiempo de duración configurado</li>
-            <li>Consultas SQL completas</li>
-        </ol>
-    </section>
+<section>
+    <h2>Características principales</h2>
+    <ol>
+        <li>Totalmente gestionado con administración cero</li>
+        <li>Ciclo de vida de desarrollo más rápido</li>
+        <li>Alto rendimiento y predecibilidad</li>
+        <li>Modelado de datos flexible</li>
+        <li>Seguridad y redundancia</li>
+        <li>Compatibilidad con datos JSON</li>
+        <li>Tiempo de duración configurado</li>
+        <li>Consultas SQL completas</li>
+    </ol>
+</section>
 
-    <section>
-        <h2>Detalles de cada característica</h2>
-        <ul>
-            <li><strong>Administración cero:</strong> Oracle se encarga del hardware, software, y seguridad para que el desarrollador se enfoque solo en la aplicación.</li>
-            <li><strong>Desarrollo ágil:</strong> Permite comenzar a trabajar inmediatamente tras acceder al servicio, sin preocuparse por configuración avanzada.</li>
-            <li><strong>Rendimiento alto:</strong> Garantiza respuesta rápida incluso si la carga de trabajo o almacenamiento crece.</li>
-            <li><strong>Modelado híbrido:</strong> Soporta datos con y sin esquema, incluyendo objetos JSON.</li>
-            <li><strong>Redundancia de datos:</strong> Guarda los datos en múltiples zonas para protegerlos ante fallos.</li>
-            <li><strong>JSON + SQL:</strong> Se pueden consultar datos JSON usando SQL, sin complicaciones.</li>
-            <li><strong>Duración limitada:</strong> Los datos pueden expirar automáticamente, útil para IoT y sensores.</li>
-            <li><strong>Consultas SQL:</strong> Compatible con el lenguaje de consulta más común en bases de datos.</li>
-        </ul>
-    </section>
+<section>
+    <h2>Detalles de cada característica</h2>
+    <ul>
+        <li><strong>Administración cero:</strong> Oracle se encarga del hardware, software, y seguridad para que el desarrollador se enfoque solo en la aplicación.</li>
+        <li><strong>Desarrollo ágil:</strong> Permite comenzar a trabajar inmediatamente tras acceder al servicio, sin preocuparse por configuración avanzada.</li>
+        <li><strong>Rendimiento alto:</strong> Garantiza respuesta rápida incluso si la carga de trabajo o almacenamiento crece.</li>
+        <li><strong>Modelado híbrido:</strong> Soporta datos con y sin esquema, incluyendo objetos JSON.</li>
+        <li><strong>Redundancia de datos:</strong> Guarda los datos en múltiples zonas para protegerlos ante fallos.</li>
+        <li><strong>JSON + SQL:</strong> Se pueden consultar datos JSON usando SQL, sin complicaciones.</li>
+        <li><strong>Duración limitada:</strong> Los datos pueden expirar automáticamente, útil para IoT y sensores.</li>
+        <li><strong>Consultas SQL:</strong> Compatible con el lenguaje de consulta más común en bases de datos.</li>
+    </ul>
+</section>
 
-    <section>
-        <h2>Glosario de términos</h2>
-        <dl>
-            <dt>Oracle NoSQL Database</dt>
-            <dd>Base de datos distribuida que ofrece escalabilidad, rendimiento y disponibilidad para aplicaciones modernas.</dd>
+<section>
+    <h2>Glosario de términos</h2>
+    <dl>
+        <dt>Oracle NoSQL Database</dt>
+        <dd>Base de datos distribuida que ofrece escalabilidad, rendimiento y disponibilidad para aplicaciones 
+            modernas.</dd>
+        <dt>Alta disponibilidad</dt>
+        <dd>Capacidad del sistema de seguir funcionando incluso si ocurre una falla en parte de la infraestructura.</dd>
+        <dt>Redundancia</dt>
+        <dd>Mecanismo para guardar copias de seguridad en distintas ubicaciones para proteger los datos.</dd>
+        <dt>JSON</dt>
+        <dd>Formato ligero para representar datos estructurados, fácil de leer y escribir.</dd>
+        <dt>SQL</dt>
+        <dd>Lenguaje estructurado de consulta, usado para acceder, modificar y gestionar bases de datos relacionales.</dd>
+    </dl>
+</section>
+<br>
 
-            <dt>Alta disponibilidad</dt>
-            <dd>Capacidad del sistema de seguir funcionando incluso si ocurre una falla en parte de la infraestructura.</dd>
+<footer>
+    <hr>
+    <h3>Contacto rapido</h3>
+    <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+    <p>Teléfono: (81) 1234 5678</p>
+    <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
+    <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
+    
+    <div class="footer_redes">
+        <a href="https://www.facebook.com/oraclelatinoamerica" target="_blank">
+            <img src="\static\paginaoracle1\img\facebook.png" alt="Facebook" />
+        </a>
+        
+        <a href="https://twitter.com/OracleLatam" target="_blank">
+            <img src="\static\paginaoracle1\img\equis.png" alt="Twitter X" class="icon-redes" style="width: 42px; height: 42px;" />
+        </a>
+        
+        <a href="https://www.instagram.com/oraclelatinoamerica" target="_blank">
+            <img src="\static\paginaoracle1\img\insta.png" alt="Instagram" />
+        </a>
 
-            <dt>Redundancia</dt>
-            <dd>Mecanismo para guardar copias de seguridad en distintas ubicaciones para proteger los datos.</dd>
+        <a href="https://www.youtube.com/user/OracleLatinAmerica">
+            <img src="\static\paginaoracle1\img\yt.png" alt="YouTube" />
+        </a>
 
-            <dt>JSON</dt>
-            <dd>Formato ligero para representar datos estructurados, fácil de leer y escribir.</dd>
-
-            <dt>SQL</dt>
-            <dd>Lenguaje estructurado de consulta, usado para acceder, modificar y gestionar bases de datos relacionales.</dd>
-        </dl>
-    </section>
-    <br>
-    <footer>
-        <hr>
-        <h3>Pie de página</h3>
-        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
-        <p>Teléfono: (81) 1234 5678</p>
-        <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
-        <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
-    </footer>
+        <a href="https://www.linkedin.com/company/oracle/">
+            <img src="\static\paginaoracle1\img\linkedin.png" alt="LinkedIn" />
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

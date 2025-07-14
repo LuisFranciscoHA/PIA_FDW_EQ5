@@ -7,145 +7,241 @@
     <title>Oracle</title>
     <link rel="stylesheet" href="\static\paginaoracle1\css\estiloindex.css" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"><!--para el deste de oralce-->
-
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 id="oracle_logo">ORACLE</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="{% url 'caracteristicas' %}">Características</a></li>
-                <li><a href="ventajas.html">Ventajas</a></li>
-                <li><a href="desventajas.html">Desventajas</a></li>
-                <li><a href="apoyo.html">¿A quién apoya?</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-                <li><a href="javascript_leng.html">Resumen y practica suma</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-
-<div class="carousel-container">
+  <header>
+    <h1 id="oracle_logo">ORACLE</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="{% url 'caracteristicas' %}">Características</a></li>
+        <li><a href="{% url 'ventajas' %}">Ventajas</a></li>
+        <li><a href="{% url 'desventajas' %}">Desventajas</a></li>
+        <li><a href="{% url 'apoyo' %}">¿A quién apoya?</a></li>
+        <li><a href="{% url 'contacto' %}">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="carousel-container">
     <button class="prev" onclick="moverCarousel(-1)">&lt;</button>
-
+    
     <div class="carousel-track" id="carousel">
-
       <div class="carousel-item">
         <div class="carousel-img">
-          <img src="https://www.purestorage.com/content/dam/purestorage/knowledge/oracle-database.jpg.imgo.jpg" alt="Imagen 1" />
+          <img src="\static\paginaoracle1\img\caract_oracle.png" alt="Imagen 1" />
         </div>
+        
         <div class="carousel-text">
-          <h3>Título 1</h3>
-          <p>Texto breve de descripción o introducción que acompaña a la imagen.</p>
+          <h3>Elementos de oracle</h3>
+          <p>Conoce las funciones clave que hacen de Oracle una plataforma líder en gestión de bases de datos. 
+            Desde su rendimiento hasta su flexibilidad, descubre qué lo hace destacar.</p>
+            <a href="{% url 'caracteristicas' %}" class="btn_carousel">Ver más</a>
+          </div>
         </div>
-      </div>
-
+        
+        <div class="carousel-item">
+          <div class="carousel-img">
+            <img src="\static\paginaoracle1\img\ventaja_ora.png" alt="Imagen 2" />
+          </div>
+          
+          <div class="carousel-text">
+            <h3>Ventajas de oracle database</h3>
+            <p> Oracle es una de las plataformas de gestión de bases de datos más robustas y confiables del mercado,
+              ofreciendo numerosas ventajas para empresas de todos los tamaños.</p>
+              <a href="{% url 'ventajas' %}" class="btn_carousel">Ver más</a>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="carousel-img">
+              <img src="\static\paginaoracle1\img\social_oracle.png" alt="Imagen 3" />
+            </div>
+            
+            <div class="carousel-text">
+              <h3>Relaciones Tecnologicas</h3>
+              <p>Oracle mantiene fuertes alianzas y compatibilidades con diversas tecnologías líderes en la industria, incluyendo lenguajes de programación como Java,
+                herramientas de desarrollo, y plataformas en la nube.</p>
+                <a href="{% url 'apoyo' %}" class="btn_carousel">Ver más</a>
+              </div>
+            </div>
+            
             <div class="carousel-item">
-        <div class="carousel-img">
-          <img src="https://www.purestorage.com/content/dam/purestorage/knowledge/oracle-database.jpg.imgo.jpg" alt="Imagen 1" />
-        </div>
-        <div class="carousel-text">
-          <h3>Título 1</h3>
-          <p>Texto breve de descripción o introducción que acompaña a la imagen.</p>
-        </div>
-      </div>
-
-            <div class="carousel-item">
-        <div class="carousel-img">
-          <img src="https://www.purestorage.com/content/dam/purestorage/knowledge/oracle-database.jpg.imgo.jpg" alt="Imagen 1" />
-        </div>
-        <div class="carousel-text">
-          <h3>Título 1</h3>
-          <p>Texto breve de descripción o introducción que acompaña a la imagen.</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="carousel-img">
-          <img src="https://www.muycomputerpro.com/wp-content/uploads/2018/10/oracle.jpg" alt="Imagen 2" />
-        </div>
-        <div class="carousel-text">
-          <h3>Título 2</h3>
-          <p>Próxima Página 2</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="carousel-img">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW3IMlMWVQYlrTmb7fZX6fHpv_Y21MlF3JNA&s" alt="Imagen 3" />
-        </div>
-        <div class="carousel-text">
-          <h3>Título 3</h3>
-          <p>Próxima Página 3</p>
-        </div>
-      </div>
-
-    </div>
-
-    <button class="next" onclick="moverCarousel(1)">&gt;</button>
-  </div>
-
-<script src="{% static 'paginaoracle1/js/carousel.js' %}"></script>
-
-
-
-    <main class="main-content">
-        <section class="descripcion">
-            <h2>Descripción</h2>
-            <p>Oracle es una compañía de tecnología de la información con sede en Estados Unidos que ofrece una amplia gama de productos y servicios orientados a los negocios que incluyen Oracle Database, un sistema de gestión de bases de datos relacionales (RDBMS).</p>
-            <p>La compañía fue fundada en 1977 en California y se encuentra entre las compañías de software y hardware más grandes del mundo. Desde su creación hace casi cincuenta años, Oracle desarrolló un gran número de soluciones de tecnología de la información (TI) y adquirió una amplia cartera de empresas.</p>
-            <p>Es particularmente conocida por sus ofertas de planeación de recursos empresariales (ERP) basadas en la nube, inteligencia empresarial y servicios financieros. También ha sido clave en el desarrollo de tecnologías como Java, Oracle Linux y Solaris.</p>
-            <p>Oracle ayuda a las organizaciones a manejar grandes volúmenes de datos de manera segura y eficiente. Además, muchas empresas en todo el mundo confían en sus plataformas para operar sus sistemas críticos todos los días.</p>
-            <figure>
+              <div class="carousel-img">
+                <img src="\static\paginaoracle1\img\slide2.png" alt="Imagen 4" />
+              </div>
+              
+              <div class="carousel-text">
+                <h3>Conoce mas</h3>
+                <p>Oracle ofrece una amplia gama de servicios en la nube que facilitan la administración y optimización de datos,
+                  ayudando a las organizaciones a tomar decisiones informadas y eficientes.</p>
+                  <a href="#info-adicional" class="btn_carousel">Ver más</a>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="carousel-img">
+                  <img src="\static\paginaoracle1\img\relleno2.png" alt="Imagen 5" />
+                </div>
+                
+                <div class="carousel-text">
+                  <h3>¿Tienes alguna pregunta o necesitas más información sobre Oracle y sus soluciones?</h3>
+                  <p> Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros a través de los siguientes medios:</p>
+                  <a href="{% url 'contacto' %}" class="btn_carousel">Ver más</a>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="carousel-img">
+                  <img src="\static\paginaoracle1\img\jg.png" alt="Imagen 4" />
+                </div>
+                
+                <div class="carousel-text">
+                  <h3>Practica de javascript y uso de prompt</h3>
+                  <p>JavaScript es un lenguaje de programación esencial para el desarrollo web, 
+                    que permite crear páginas interactivas y dinámicas. 
+                  </p>
+                  <a href="{% url 'javascript_leng' %}" class="btn_carousel">Ver más</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button class="next" onclick="moverCarousel(1)">&gt;</button>
+          </div>
+          
+          <script src="{% static 'paginaoracle1/js/carousel.js' %}"></script>
+          
+          <script>
+            console.log('¿script de prueba por si no sirve el de arriba?');
+          </script>
+          
+          <main class="main-content">
+            <section class="descripcion">
+              <h2>Compañia</h2>
+              <p>Oracle es una compañía de tecnología de la información con sede en Estados Unidos que ofrece una amplia gama de productos y servicios orientados a los negocios que incluyen Oracle Database, un sistema de gestión de bases de datos relacionales (RDBMS).</p>
+              <p>La compañía fue fundada en 1977 en California y se encuentra entre las compañías de software y hardware más grandes del mundo. Desde su creación hace casi cincuenta años, Oracle desarrolló un gran número de soluciones de tecnología de la información (TI) y adquirió una amplia cartera de empresas.</p>
+              <p>Es particularmente conocida por sus ofertas de planeación de recursos empresariales (ERP) basadas en la nube, inteligencia empresarial y servicios financieros. También ha sido clave en el desarrollo de tecnologías como Java, Oracle Linux y Solaris.</p>
+              <p>Oracle ayuda a las organizaciones a manejar grandes volúmenes de datos de manera segura y eficiente. Además, muchas empresas en todo el mundo confían en sus plataformas para operar sus sistemas críticos todos los días.</p>
+              
+              <figure>
                 <img
-                    src="https://media.istockphoto.com/id/1261350454/es/foto/edificio-de-la-sede-de-oracle-en-bucarest-logotipo-de-la-empresa-oracle-en-un-edificio-de.jpg?s=612x612&w=0&k=20&c=mGhS9-NMKBiQZleVCx4nnGLRjQlqHCd-l9yaA4hMhAk="
-                    alt="Oficina Oracle"
-                    width="650"
-                    height="350"
-                    class="imagen-principal"
-                />
+                src="https://media.istockphoto.com/id/1261350454/es/foto/edificio-de-la-sede-de-oracle-en-bucarest-logotipo-de-la-empresa-oracle-en-un-edificio-de.jpg?s=612x612&w=0&k=20&c=mGhS9-NMKBiQZleVCx4nnGLRjQlqHCd-l9yaA4hMhAk="
+                alt="Oficina Oracle"
+                width="650"
+                height="350"
+                class="imagen-principal"/>
                 <figcaption>Imagen representativa de la empresa</figcaption>
                 <p>Imagen obtenida de:</p>
                 <blockquote>
-                    <a href="https://www.istockphoto.com/es/foto/edificio-de-la-sede-de-oracle-en-bucarest-logotipo-de-la-empresa-oracle-en-un-gm1261350454-369220688" target="_blank"
-                        >media.istockphoto.com</a
-                    >
+                  <a href="https://www.istockphoto.com/es/foto/edificio-de-la-sede-de-oracle-en-bucarest-logotipo-de-la-empresa-oracle-en-un-gm1261350454-369220688" target="_blank"
+                  >media.istockphoto.com</a>
                 </blockquote>
-            </figure>
-        </section>
-
-        <section class="introduccion-db">
-            <h2>Introducción a Oracle Database</h2>
-            <div>
+              </figure>
+            </section>
+            
+            <br>
+            <section class="introduccion-db">
+              <h2>Introducción a Oracle Database</h2>
+              <div>
                 <p>
-                    Oracle Database es uno de los sistemas más utilizados para almacenar y organizar información en grandes empresas. Su estructura basada en SQL permite consultar y administrar datos de forma rápida y confiable. Es ideal para aplicaciones que requieren alto rendimiento, seguridad y escalabilidad.
+                  Oracle Database es uno de los sistemas más utilizados para almacenar y organizar información en grandes empresas. Su estructura basada en SQL permite consultar y administrar datos de forma rápida y confiable. Es ideal para aplicaciones que requieren alto rendimiento, seguridad y escalabilidad.
                 </p>
-            </div>
-        </section>
-
-        <article class="video_cont">
-            <h2>Video relacionado</h2>
-            <p>A continuación, un video complementario sobre Oracle Database:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wIOQMUA69Eo" allowfullscreen></iframe>
-        </article>
-    </main>
-
-    <aside class="info-adicional">
-        <h1>Para conocer más:</h1>
-        <p>Escucha también un resumen de Oracle Database Cloud:</p>
-        <audio controls class="audio-player">
-            <source src="aud_pag1/oracle_db_cloud.mp3" type="audio/mpeg" />
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-    </aside>
-
-    <footer>
-        <hr />
-        <h3>Pie de página</h3>
-        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
-        <p>Teléfono: (81) 1234 5678</p>
-        <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
-        <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
-    </footer>
+              </div>
+            </section>
+            
+            <article class="video_cont">
+              <h2>Video relacionado</h2>
+              <p>A continuación, un video complementario sobre Oracle Database:</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/wIOQMUA69Eo" allowfullscreen></iframe>
+            </article>
+          </main>
+          
+          <section class="seccion1">
+            <div class="contenedor1">
+              <h2>Aplicaciones de Oracle Cloud</h2>
+              <p>Más de 30 000 organizaciones de todos los tamaños confían en Oracle Cloud Applications para ejecutar sus principales 
+                operaciones empresariales de back-office y front-office. Cada conjunto de aplicaciones está diseñado para funcionar conjuntamente y ayudar así a eliminar la complejidad de TI y maximizar los beneficios de los datos. Las aplicaciones, creadas y ejecutadas en Oracle Cloud Infrastructure, ofrecen la escalabilidad, la seguridad y el rendimiento que requieren las empresas actuales.
+              </p>
+              
+              <div class="boton-info">
+                <button class="btn-info">Más info</button>
+                <div class="info-desplegable">
+                  <p>Un conjunto completo de aplicaciones en la nube que ofrece procesos y datos uniformes para toda su empresa
+                    Oracle Cloud Applications incluyen ERP, HCM, SCM, CX y más, diseñados para ofrecer una experiencia unificada y datos en tiempo real.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="contenedor2">
+                <h2>Oracle Cloud Infrastructure</h2>
+                <p>Oracle Cloud Infrastructure ofrece operaciones autónomas, seguridad integrada y servicios verdaderamente elásticos y sin servidores en nuestras regiones de nube pública global o en el centro de datos.
+                  Ejecute aplicaciones empresariales cruciales con alto rendimiento, escala y disponibilidad al tiempo que reduce sus costos.
+                </p>
+                <div class="boton-info">
+                  <button class="btn-info">Más info</button>
+                  <div class="info-desplegable">
+                    <p>Cloud Infrastructure
+                      Una plataforma segura y automatizada para migrar cargas de trabajo empresariales y crear nuevas aplicaciones nativas de la nube
+                      OCI soporta cargas de trabajo críticas con baja latencia, seguridad de primera y herramientas para desarrolladores modernas.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <div class="cont_abajo">
+                <aside class="info-adicional" id="info-adicional">
+                  <h1>Para conocer más:</h1>
+                  <p>Oracle Database Cloud (u oficialmente Oracle Cloud Database Services) 
+                    es un servicio en la nube ofrecido por Oracle Corporation que te permite usar su base de datos
+                    (Oracle Database) sin necesidad de instalarla, configurarla ni mantenerla en servidores físicos o locales. Todo se administra desde la nube.</p>
+                    <p>Escucha también un resumen de Oracle Database Cloud:</p>
+                    <audio controls class="audio-player">
+                      <source src="\static\paginaoracle1\aud\oracle_db_cloud.mp3" type="audio/mpeg" />
+                      Tu navegador no soporta el elemento de audio.
+                    </audio>
+                  </aside>
+                  
+                  <aside class="sidebar-info">
+                    <h3>Dato curioso</h3>
+                    <p>Oracle fue una de las primeras compañías en comercializar una base de datos que usaba el lenguaje SQL, incluso antes de que el estándar fuera finalizado oficialmente.</p>
+                    
+                    <h3>¿Sabías qué?</h3>
+                    <p>Su nombre proviene de un proyecto interno de la CIA llamado justamente "Oracle".</p>
+                    <p>El nombre Oracle viene de un proyecto confidencial que sus fundadores, Larry Ellison y Bob Miner, desarrollaron para la CIA. 
+                      El objetivo era crear una base de datos que “respondiera todas las preguntas”, como un oráculo.</p>
+                    <p>Además, Oracle es dueño de Java desde que adquirió Sun Microsystems en 2010, y también mantiene su propio sistema operativo: Oracle Linux.</p>
+                  </aside>
+                </div>
+              </div>
+              <br><br>  
+              
+              <footer>
+                <hr>
+                <h3>Contacto rapido</h3>
+                <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+                <p>Teléfono: (81) 1234 5678</p>
+                <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
+                <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
+                <div class="footer_redes">
+                  <a href="https://www.facebook.com/oraclelatinoamerica" target="_blank">
+                    <img src="\static\paginaoracle1\img\facebook.png" alt="Facebook" />
+                  </a>
+                  <a href="https://twitter.com/OracleLatam" target="_blank">
+                    <img src="\static\paginaoracle1\img\equis.png" alt="Twitter X" class="icon-redes" style="width: 42px; height: 42px;" />
+                  </a>
+                  <a href="https://www.instagram.com/oraclelatinoamerica" target="_blank">
+                    <img src="\static\paginaoracle1\img\insta.png" alt="Instagram" />
+                  </a>
+                  <a href="https://www.youtube.com/user/OracleLatinAmerica">
+                    <img src="\static\paginaoracle1\img\yt.png" alt="YouTube" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/oracle/">
+                    <img src="\static\paginaoracle1\img\linkedin.png" alt="LinkedIn" />
+                  </a>
+                </div>
+</footer>
 </body>
 </html>
