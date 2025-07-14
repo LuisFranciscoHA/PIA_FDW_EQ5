@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventajas</title>
+    <link rel="stylesheet" href="{% static 'paginaoracle1/css/estilo_vent.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"><!--para el deste de oralce-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Ventajas de Oracle</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'caracteristicas' %}">Características</a></li>
+                <li><a href="{% url 'desventajas' %}">Desventajas</a></li>
+                <li><a href="{% url 'apoyo' %}">¿A quién apoya?</a></li>
+                <li><a href="{% url 'contacto' %}">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <h2 class="seccion_titulo">Ventajas</h2>
+        <p class="parrafo1">Oracle ofrece muchas ventajas para el desarrollo de soluciones tecnológicas robustas, seguras y escalables.</p>
+        
+        <section class="ventajas">
+            <h2 class="seccion_achedos">Ventajas principales</h2>
+            <dl class="ventajas_lista">
+                <dt>Alto rendimiento</dt>
+                <dd>Oracle está diseñado para manejar cargas de trabajo complejas y grandes volúmenes de datos con eficiencia, manteniendo un rendimiento constante incluso con muchos usuarios concurrentes.</dd>
+
+                <dt>Seguridad integral</dt>
+                <dd>Ofrece protección robusta contra accesos no autorizados, tanto internos como externos, incluyendo autenticación y autorización estrictas, cifrado de datos y redes.</dd>
+
+                <dt>Integración con otras tecnologías</dt>
+                <dd>Oracle se integra fácilmente con lagos de datos, almacenes de datos y servicios como Spark, Hadoop y Elasticsearch, permitiendo el acceso a datos desde diversas fuentes.</dd>
+
+                <dt>Flexibilidad y Escalabilidad</dt>
+                <dd>Oracle permite a las empresas elegir entre entornos locales, en la nube o una combinación de ambos, adaptándose a sus necesidades específicas de almacenamiento y procesamiento de datos.</dd>
+
+                <dt>Optimización de consultas complejas</dt>
+                <dd>Oracle está diseñado para optimizar consultas complejas, lo que permite a los desarrolladores trabajar de manera más eficiente.</dd>
+            </dl>
+        </section>
+
+        <aside class="otras_vent">
+            <h2>Otras ventajas destacadas</h2>
+            <ul>
+                <li>Amplia documentación y soporte técnico oficial.</li>
+                <li>Actualizaciones constantes para mayor seguridad.</li>
+                <li>Alta disponibilidad en la nube.</li>
+                <li>Fácil integración con herramientas empresariales.</li>
+            </ul>
+        </aside>
+
+        <article class="infra_nube">
+            <h2>Infraestructura en la Nube de Oracle</h2>
+            <p>Oracle Cloud Infrastructure ofrece una plataforma segura y flexible para desplegar aplicaciones empresariales.</p>
+            <img src="\static\paginaoracle1\img\cloud.png" alt="Logo Oracle Cloud" class="foto_nube">
+            <p>La nube de Oracle facilita la gestión eficiente de recursos tecnológicos y acelera la innovación.</p>
+        </article>
+    </main>
+
+    <br>
+    <footer>
+        <hr>
+        <h3>Contacto rapido</h3>
+        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+        <p>Teléfono: (81) 1234 5678</p>
+        <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
+        <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
+<div class="footer_redes">
+  <a href="https://www.facebook.com/oraclelatinoamerica" target="_blank">
+    <img src="\static\paginaoracle1\img\facebook.png" alt="Facebook" />
+  </a>
+  <a href="https://twitter.com/OracleLatam" target="_blank">
+<img src="\static\paginaoracle1\img\equis.png" alt="Twitter X" class="icon-redes" style="width: 42px; height: 42px;" />
+  </a>
+  <a href="https://www.instagram.com/oraclelatinoamerica" target="_blank">
+    <img src="\static\paginaoracle1\img\insta.png" alt="Instagram" />
+  </a>
+  <a href="https://www.youtube.com/user/OracleLatinAmerica">
+    <img src="\static\paginaoracle1\img\yt.png" alt="YouTube" />
+  </a>
+  <a href="https://www.linkedin.com/company/oracle/">
+    <img src="\static\paginaoracle1\img\linkedin.png" alt="LinkedIn" />
+  </a>
+</div>
+
+</footer>
+</body>
+</html>

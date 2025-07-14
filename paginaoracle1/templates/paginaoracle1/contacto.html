@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de contacto</title>
+    <link rel="stylesheet" href="{% static 'paginaoracle1/css/estilo_conta.css' %}">
+</head>
+<body>
+    <header class="main_header">
+        <nav id="nav_home">
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>               
+                <li><a href="{% url 'caracteristicas' %}">Características</a></li>
+                <li><a href="{% url 'ventajas' %}">Ventajas</a></li>
+                <li><a href="{% url 'desventajas' %}">Desventajas</a></li>
+                <li><a href="{% url 'apoyo' %}.html">¿A quién apoya?</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <div class="contenedor">
+        <h1>Ponte en contacto con un experto Oracle</h1>
+        <img src="https://assets.easybroker.com/organization_files/12788/contacto.jpg"
+        alt="Contacto Oracle" class="imagen-contacto">
+        
+        <div class="formulario">
+            <h2>Envíanos un mensaje</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <input type="text" name="asunto" placeholder="Asunto">
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+        <div class="informacion">
+            <h2>Sucursales disponibles</h2>
+            <p>A continuación te mostramos algunas de nuestras sucursales donde puedes solicitar información o asistencia:</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Horario de atención</th>
+                </tr>
+                <tr>
+                    <td>Monterrey, NL</td>
+                    <td>Av. Universidad 1001, San Nicolás</td>
+                    <td>(81) 1234 5678</td>
+                    <td>Lunes a viernes, 9:00 a.m. - 6:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>Ciudad de México</td>
+                    <td>Reforma 250, Col. Juárez</td>
+                    <td>(55) 8765 4321</td>
+                    <td>Lunes a viernes, 8:30 a.m. - 5:30 p.m.</td>
+                </tr>
+                <tr>
+                    <td>Guadalajara, JAL</td>
+                    <td>Av. Vallarta 1600, Zona Centro</td>
+                    <td>(33) 1122 3344</td>
+                    <td>Lunes a sábado, 10:00 a.m. - 4:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>Mérida, YUC</td>
+                    <td>Calle 60 #456, Centro Histórico</td>
+                    <td>(999) 223 4455</td>
+                    <td>Lunes a viernes, 9:00 a.m. - 2:00 p.m.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+        <p>Teléfono: (81) 1234 5678</p>
+        <p>&copy; 2025 Muebles Oficina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

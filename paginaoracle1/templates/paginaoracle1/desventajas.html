@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desventajas de Oracle</title>
+    <link rel="stylesheet" href="\static\paginaoracle1\css\estilo_desv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"><!--para el deste de oralce-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Desventajas de Oracle</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'caracteristicas' %}">Características</a></li>
+                <li><a href="{% url 'ventajas' %}">Ventajas</a></li>
+                <li><a href="{% url 'apoyo' %}">¿A quién apoya?</a></li>
+                <li><a href="{% url 'contacto' %}">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section>
+            <h2 class="seccion_achedos">¿Por qué tiene desventajas?</h2>
+            <p class="parrafo1">Aunque Oracle es una plataforma poderosa y reconocida, como toda tecnología, no está exenta de limitaciones. Su diseño robusto puede representar desafíos en términos de costos, facilidad de uso y accesibilidad para ciertos usuarios o empresas pequeñas.</p>
+        </section>
+        
+        <section><h2 class="seccion_achedos">Principales desventajas</h2>
+            <ol class="lista_desv">
+                <li>Licencias muy costosas, especialmente para negocios pequeños o medianos.</li>
+                <li>Instalación y configuración inicial complejas, lo que requiere tiempo y experiencia.</li>
+                <li>La versión gratuita tiene funciones limitadas en comparación con la versión de pago.</li>
+                <li>Necesita personal capacitado para su administración y soporte.</li>
+                <li>El soporte técnico completo solo está disponible con planes premium.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="seccion_achedos">Desventajas adicionales</h2>
+            <ol class="lista_desv">
+                <li>Requiere un proceso de aprendizaje más largo para quienes nunca han trabajado con Oracle.</li>
+                <li>Alto consumo de recursos del sistema, lo que exige hardware potente.</li>
+                <li>Los procesos de migración desde otras plataformas pueden ser costosos y complicados.</li>
+                <li>Configuraciones avanzadas difíciles de entender para usuarios sin experiencia.</li>
+                <li>Dependencia de servicios técnicos especializados que pueden aumentar los costos a largo plazo.</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2 class="seccion_achedos">Comparativa simple</h2>
+            <table class="tabla_comp">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Oracle</th>
+                        <th>Alternativas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Precio</td>
+                        <td>Alto</td>
+                        <td>Medio o bajo</td>
+                    </tr>
+                    <tr>
+                        <td>Facilidad de uso</td>
+                        <td>Media</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Funciones gratuitas</td>
+                        <td>Limitadas</td>
+                        <td>Más accesibles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="cita_opinion">
+            <h2 class="seccion_achedos">Opinión destacada</h2>
+            <blockquote>
+                “Oracle es extremadamente potente, pero no está pensado para todos. Se necesita invertir tiempo, dinero y personal capacitado para aprovechar al máximo sus capacidades.”
+                <p><small>- Administrador de bases de datos</small></p>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2 class="seccion_achedos">Preguntas frecuentes</h2>
+            <dl class="faq">
+                <dt>¿Oracle es completamente gratuito?</dt>
+                <dd>No. Solo algunas versiones como Oracle Database Express Edition (XE) son gratuitas, pero con funciones limitadas.</dd>
+
+                <dt>¿Es recomendable para empresas pequeñas?</dt>
+                <dd>Depende del presupuesto y las necesidades del proyecto. Para proyectos sencillos, existen opciones más económicas y fáciles de usar.</dd>
+
+                <dt>¿Requiere conocimientos avanzados?</dt>
+                <dd>Sí. Muchas funciones requieren experiencia técnica para su correcta implementación y configuración.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2 class="seccion_achedos">Conclusión</h2>
+            <p class="parrafo1">Oracle es una plataforma robusta y completa, ideal para empresas con necesidades avanzadas. Sin embargo, sus costos, complejidad técnica y requerimientos de infraestructura pueden representar una barrera para proyectos más pequeños. Evaluar sus desventajas permite tomar mejores decisiones antes de invertir en su uso.</p>
+        </section>
+
+        <aside class="dato_extra">
+            <h2>Dato extra</h2>
+            <p>Oracle XE es una versión gratuita pensada para estudiantes y pruebas de concepto. A pesar de ser útil, sus limitaciones impiden su uso completo en entornos empresariales exigentes.</p>
+        </aside>
+
+    </main>
+    
+    <br>
+    <footer>
+        <hr>
+        <h3>Contacto rapido</h3>
+        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+        <p>Teléfono: (81) 1234 5678</p>
+        <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
+        <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
+        
+        <div class="footer_redes">
+            <a href="https://www.facebook.com/oraclelatinoamerica" target="_blank">
+                <img src="\static\paginaoracle1\img\facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/OracleLatam" target="_blank">
+                <img src="\static\paginaoracle1\img\equis.png" alt="Twitter X" class="icon-redes" style="width: 42px; height: 42px;" />
+            </a>
+            
+            <a href="https://www.instagram.com/oraclelatinoamerica" target="_blank">
+                <img src="\static\paginaoracle1\img\insta.png" alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/user/OracleLatinAmerica">
+                <img src="\static\paginaoracle1\img\yt.png" alt="YouTube" />
+            </a>
+            <a href="https://www.linkedin.com/company/oracle/">
+                <img src="\static\paginaoracle1\img\linkedin.png" alt="LinkedIn" />
+            </a>
+        </div>
+
+</footer>
+</body>
+</html>

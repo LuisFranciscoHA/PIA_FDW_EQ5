@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoyos de Oracle</title>
+    <link rel="stylesheet" href="{% static 'paginaoracle1/css/estilo_apoyo.css' %}">
+</head>
+<body>
+    <header class="main_header">
+        <h1>Tecnologías soportadas por Oracle</h1>
+        <nav>
+            <ul class="nav-links">
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'caracteristicas' %}">Características</a></li>
+            <li><a href="{% url 'ventajas' %}">Ventajas</a></li>
+            <li><a href="{% url 'desventajas' %}">Desventajas</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>¿A quién apoya Oracle?</h2>
+        <p>Oracle no solo ofrece herramientas robustas de bases de datos, sino también soporte e integración
+            con tecnologías ampliamente utilizadas por los desarrolladores y las empresas modernas. 
+            Su ecosistema promueve la innovación, la escalabilidad y la eficiencia.
+        </p>
+    </section>
+    
+    <section>
+        <h2>Relaciones tecnológicas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Relación con Oracle</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for tecnologia in tecnologias %}
+                <tr>
+                    <td>{{ tecnologia.tecnologia_progra }}</td>
+                    <td>{{ tecnologia.relacion_desc }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2">No hay tecnologías registradas aún.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    
+    <aside class="curiosidades">
+        <h2>Dato Curioso</h2>
+        <p>¿Sabías que Oracle fue una de las primeras compañías en comercializar el lenguaje SQL a nivel empresarial?</p>
+        <p>Además, Oracle adquirió Sun Microsystems en 2010, lo que le dio el control total de Java.</p>
+    </aside>
+    
+    <article>
+        <h2>Conclusión</h2>
+        <p>Gracias a su compatibilidad con múltiples tecnologías, Oracle se posiciona como una de las soluciones
+             más completas para empresas que buscan integrarse a entornos modernos, flexibles y escalables. 
+             La variedad de lenguajes y plataformas compatibles permite a los desarrolladores trabajar sin restricciones y 
+             con herramientas confiables.
+            </p>
+        </article>
+    </main>
+    
+    <footer>
+        <hr>
+        <h3>Contacto rápido</h3>
+        <p>Dirección: Calle Ficticia #123 Col. Apodaca, Monterrey, N.L.</p>
+        <p>Teléfono: (81) 1234 5678</p>
+        <p>&copy; 2025 EQUIPO 5 FDW3. Todos los derechos reservados.</p>
+        <p>Esta página fue elaborada como parte de un proyecto educativo para aprender sobre HTML y el funcionamiento de Oracle.</p>
+
+        <div class="footer_redes">
+            <a href="https://www.facebook.com/oraclelatinoamerica" target="_blank">
+                <img src="\static\paginaoracle1\img\facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/OracleLatam" target="_blank">
+                <img src="\static\paginaoracle1\img\equis.png" alt="Twitter X" style="width: 42px; height: 42px;" />
+            </a>
+            
+            <a href="https://www.instagram.com/oraclelatinoamerica" target="_blank">
+                <img src="\static\paginaoracle1\img\insta.png" alt="Instagram" />
+            </a>
+            
+            <a href="https://www.youtube.com/user/OracleLatinAmerica">
+                <img src="\static\paginaoracle1\img\yt.png" alt="YouTube" />
+            </a>
+            <a href="https://www.linkedin.com/company/oracle/">
+                <img src="\static\paginaoracle1\img\linkedin.png" alt="LinkedIn" />
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
