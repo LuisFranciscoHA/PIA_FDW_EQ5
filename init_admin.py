@@ -11,7 +11,7 @@ from django.contrib.contenttypes.models import ContentType
 from paginaoracle1.models import tecnologia_apoyo
 
 admin_username = "admin"
-admin_email = "admin@correo.com"
+admin_email = "admin@uanl.com"
 admin_password = "123"
 
 if not User.objects.filter(username=admin_username).exists():
@@ -21,7 +21,7 @@ else:
     print("El superusuario ya existe.")
 
 supervisor_username = "supervisor"
-supervisor_email = "supervisor@correo.com"
+supervisor_email = "supervisor@uanl.com"
 supervisor_password = "123"
 
 if not User.objects.filter(username=supervisor_username).exists():
@@ -47,7 +47,7 @@ else:
 
 
 empleado_username = "empleado"
-empleado_email = "empleado@correo.com"
+empleado_email = "empleado@uanl.com"
 empleado_password = "123"
 
 if not User.objects.filter(username=empleado_username).exists():
