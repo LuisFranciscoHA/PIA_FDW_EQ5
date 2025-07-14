@@ -279,3 +279,12 @@ Las cajas dentro del contenedor tienen un flex para organizar mejor lo de adentr
     color: #fded57;
     font-weight: bold;
 }
+
+.grupo-ejercicios-js {
+  display: flex;
+  flex-direction: row; 
+  gap: 20px; 
+  justify-content: flex-start; 
+  max-width: 1000px;
+  margin: 20px auto;
+}

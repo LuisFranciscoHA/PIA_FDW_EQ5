@@ -170,19 +170,86 @@
       if (!isNaN(num1) && !isNaN(num2)) {
         const resultado = "La suma es: " + (num1 + num2);
         document.getElementById("resultadoPrompt").innerText = resultado;
-        alert(resultado); // También lo muestra como alerta
+        alert(resultado); 
       } else {
         const mensaje = "Por favor, ingresa valores numéricos válidos.";
         document.getElementById("resultadoPrompt").innerText = mensaje;
-        alert(mensaje); // Alerta si hay error
+        alert(mensaje); 
+      }
+    }
+  </script>
+</section>
+</div>
+<section class="caja sumados">
+  <h2>Sumar con número almacenado</h2>
+  <p>Se sumará el número que ingreses a uno ya almacenado (25).</p>
+  <button onclick="sumarConAlmacenado()">Ejecutar suma</button>
+
+  <script>
+    function sumarConAlmacenado() {
+      const base = 25;
+      const entrada = prompt("Ingresa un número para sumarlo a 25:");
+      const numero = parseFloat(entrada);
+
+      if (!isNaN(numero)) {
+        const resultado = base + numero;
+        console.log("Resultado de la suma:", resultado);
+        alert("Resultado: " + resultado);
+      } else {
+        alert("Por favor, ingresa un número válido.");
       }
     }
   </script>
 </section>
 
+<div class="grupo-ejercicios-js">
 
+  <!-- Ejercicio 2 -->
+  <section class="caja prompt-ejemplo">
+    <h2>Concatenar dos textos</h2>
+    <p>Ingresa dos textos y se unirán en una sola cadena.</p>
+    <button onclick="concatenarTextos()">Concatenar</button>
+    <script>
+      function concatenarTextos() {
+        const texto1 = prompt("Escribe el primer texto:");
+        const texto2 = prompt("Escribe el segundo texto:");
+        if (texto1 !== null && texto2 !== null) {
+          const resultado = texto1 + " " + texto2;
+          alert("Texto combinado: " + resultado);
+        } else {
+          alert("No se ingresaron ambos textos.");
+        }
+      }
+    </script>
+  </section>
+
+  <!-- Ejercicio 3 -->
+  <section class="caja prompt-ejemplo">
+    <h2>Detectar tipo y operar</h2>
+    <p>Si ambos datos son números, se suman. Si no, se concatenan como texto.</p>
+    <button onclick="procesarEntradas()">Ejecutar</button>
+    <script>
+      function procesarEntradas() {
+        const entrada1 = prompt("Ingresa el primer dato:");
+        const entrada2 = prompt("Ingresa el segundo dato:");
+        const num1 = parseFloat(entrada1);
+        const num2 = parseFloat(entrada2);
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+          const suma = num1 + num2;
+          alert("Ambos son números. Suma: " + suma);
+          console.log("Suma de números:", suma);
+        } else {
+          const resultado = entrada1 + " " + entrada2;
+          alert("Concatenación: " + resultado);
+          console.log("Concatenación de texto:", resultado);
+        }
+      }
+    </script>
+  </section>
 
 </div>
+
 
 </body>
 </html>
